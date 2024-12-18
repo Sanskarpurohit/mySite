@@ -216,9 +216,10 @@ main img {
   height: auto;
 }
 /* my changes hover eff */
-main img:hover{
-  size: 50px;;
-  
+img:hover{
+  border-color: #3498db;
+  transform: scale(1.1);
+
 
 }
 
