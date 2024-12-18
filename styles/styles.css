@@ -212,11 +212,8 @@ button.secondary {
   /* color: var(--text-color); */
   
 }
-a.button.secondary,button.secondary:hover{
 
- 
-  transform: scale(1.05);
-}
+
 
 main img {
   max-width: 50%;
