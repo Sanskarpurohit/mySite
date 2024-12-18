@@ -207,7 +207,8 @@ a.button.secondary,
 button.secondary {
   background-color: unset;
   border: 2px solid currentcolor;
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color:red;
 }
 
 main img {
