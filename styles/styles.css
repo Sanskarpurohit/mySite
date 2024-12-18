@@ -205,28 +205,17 @@ button:disabled:hover {
 
 a.button.secondary,
 button.secondary {
-  /* background-color: unset; */
-  background-color: #333;
-  color: green;
+  background-color: unset;
   border: 2px solid currentcolor;
-  /* color: var(--text-color); */
-  
+  color: var(--text-color);
 }
-
-
 
 main img {
   max-width: 50%;
   width: auto;
   height: auto;
 }
-/* my changes hover eff */
-img:hover{
-  border-color: #3498db;
-  transform: scale(1.1);
 
-
-}
 
 .icon {
   display: inline-block;
