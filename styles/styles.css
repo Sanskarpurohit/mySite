@@ -210,7 +210,7 @@ button.secondary {
   /* color: var(--text-color); */
   color:red;
 }
-button.secondary:hover{
+a.button.secondary,button.secondary:hover{
 
   background-color: #333;
   color: green;
