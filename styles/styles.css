@@ -215,6 +215,12 @@ main img {
   width: auto;
   height: auto;
 }
+/* my changes hover eff */
+main img:hover{
+  size: 50px;;
+  
+
+}
 
 .icon {
   display: inline-block;
