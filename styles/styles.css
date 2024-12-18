@@ -205,15 +205,16 @@ button:disabled:hover {
 
 a.button.secondary,
 button.secondary {
-  background-color: unset;
+  /* background-color: unset; */
+  background-color: #333;
+  color: green;
   border: 2px solid currentcolor;
   /* color: var(--text-color); */
-  color:red;
+  
 }
 a.button.secondary,button.secondary:hover{
 
-  background-color: #333;
-  color: green;
+ 
   transform: scale(1.05);
 }
 
