@@ -210,6 +210,12 @@ button.secondary {
   /* color: var(--text-color); */
   color:red;
 }
+button.secondary{
+
+  background-color: #333;
+  color: green;
+  transform: scale(1.05);
+}
 
 main img {
   max-width: 50%;
