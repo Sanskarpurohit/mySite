@@ -6,11 +6,11 @@
 }
 .game img{
     max-width: 50%;
-    width: 150px;
+    width: 200px;
     height: auto;
     position: relative;
     align-items: center;
-    margin-left: 300px;
+    margin-left: 350px;
     margin-top: 40px;
 }
 .game p{
