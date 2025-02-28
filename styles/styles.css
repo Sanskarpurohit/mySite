@@ -253,7 +253,7 @@ main > .section:first-of-type {
 main .section.light,
 main .section.highlight {
   /* background-color: var(--light-color); */
-  background-color: yellowgreen;
+  background-color: red;  
   margin: 0;
   padding: 40px 0;
 }
