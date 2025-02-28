@@ -6,19 +6,11 @@
 }
 .game img{
     max-width: 50%;
-    width: 100px;
+    width: 150px;
     height: auto;
     position: relative;
     align-items: center;
-    margin-left: 270px;
-    margin-top: 40px;
-}.game img{
-    max-width: 50%;
-    width: 100px;
-    height: auto;
-    position: relative;
-    align-items: center;
-    margin-left: 270px;
+    margin-left: 300px;
     margin-top: 40px;
 }
 .game p{
