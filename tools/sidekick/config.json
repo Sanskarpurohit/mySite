@@ -7,7 +7,10 @@
             "enviroments": ["edit","dev","preview","live","prod"],
             "url" : "https://github.com/Sanskarpurohit/mySite/tree/Sanskardev",
             "passConfig": true,
-            "passReferrer": true
+            "passReferrer": true,
+            "includePaths": [
+                "**.docx**"
+            ]
             
 
         }
