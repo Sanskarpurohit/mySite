@@ -22,7 +22,7 @@
         "id": "contactus",
         "title": "Contact US",
         "environments": [ "edit","dev", "preview", "live", "prod" ],
-        "url": "/tools/contactus/contactus.html?user=aem-geeks",
+        "url": "/tools/contactus/contactus.html",
         "isPalette": true,
         "passConfig": false,
         "includePaths": [ "**/:x**" ],
