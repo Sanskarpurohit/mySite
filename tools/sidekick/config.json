@@ -8,9 +8,9 @@
         "edit","dev","preview"
         ],
         "url": "https://github.com/Sanskarpurohit/mySite",
-        "isPalette": true,
-        "passConfig": true,
-        "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:400px; height: calc(100vh - 60px)"
+        "isPalette": false,
+        "passConfig": true
+        // "paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:400px; height: calc(100vh - 60px)"
       }
     ]
 }
