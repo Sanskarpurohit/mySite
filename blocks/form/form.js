@@ -1,5 +1,5 @@
 import createField from './form-fields.js';
-
+console.log("loaded");
 async function createForm(formHref, submitHref) {
   const { pathname } = new URL(formHref);
   const resp = await fetch(pathname);
@@ -100,3 +100,4 @@ export default async function decorate(block) {
     }
   });
 }
+console.log("ended");
