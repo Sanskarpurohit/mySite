@@ -1,0 +1,364 @@
+.homepage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.homepage:hover {
+    transform: scale(1.02);
+    background: linear-gradient(135deg, #1a1f2b, #283e51, #485563);
+}
+
+#title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#description {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    opacity: 0.9;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover animation */
+.homepage:hover #title,
+.homepage:hover #description {
+    transform: scale(1.05);
+    color: #f0db4f;
+}
+
+
+   
+   /* IMAGE LEFT BLOCK */
+
+   .image-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #1f1f1f;
+    color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    gap: 2rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.image-left > div:first-child {
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-left picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.image-left > div:last-child {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-left p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.image-left:hover {
+    transform: scale(1.02);
+    background: #2b2b2b; /* slightly lighter or darker than original */
+}
+
+
+   
+
+   /* IMAGE RIGHT BLOCK */
+
+   .image-right {
+    display: flex;
+    flex-direction: row-reverse; /* This will place the image on the right */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #1f1f1f;
+    color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    gap: 2rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.image-right > div:first-child {
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-right #right-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.image-right > div:last-child {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-right #left-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.image-right:hover {
+    transform: scale(1.02);
+    background: #2b2b2b; /* slightly lighter or darker than original */
+}
+
+
+
+
+
+   
+
+   /* cfm */
+
+   .centered-section {
+
+    display: flex;
+  
+    flex-direction: column;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    text-align: center;
+  
+    padding: 4rem 2rem;
+  
+    background: linear-gradient(135deg, #1d1f20, #2a2e31);
+  
+    color: #ffffff;
+  
+    border-radius: 16px;
+  
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  
+    transition: background 0.4s ease, transform 0.3s ease;
+  
+    max-width: 1200px;
+  
+    margin: 0 auto;
+  
+  }
+  
+  .centered-section:hover {
+  
+    background: linear-gradient(135deg, #2b2e30, #353a3f);
+  
+    transform: scale(1.01);
+  
+  }
+  
+  /* Title */
+  
+  #center-title {
+  
+    font-size: 2.75rem;
+  
+    font-weight: 700;
+  
+    margin: 0;
+  
+    color: #f0db4f;
+  
+    transition: color 0.3s ease;
+  
+  }
+  
+  /* Description */
+  
+  #center-description {
+  
+    font-size: 1.2rem;
+  
+    margin-top: 1rem;
+  
+    max-width: 700px;
+  
+    color: #dddddd;
+  
+    opacity: 0.9;
+  
+    transition: color 0.3s ease, opacity 0.3s ease;
+  
+  }
+  
+  /* Optional: Animate on hover */
+  
+  .centered-section:hover #center-description {
+  
+    color: #ffffff;
+  
+    opacity: 1;
+  
+  }
+ 
+  /* footer css */
+
+
+
+  /* Footer wrapper background */
+
+/* Footer wrapper */
+.site-footer {
+
+    display: flex;
+  
+    flex-direction: column;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    text-align: center;
+  
+    padding: 4rem 2rem;
+  
+    background: linear-gradient(135deg, #1d1f20, #2a2e31);
+  
+    color: #ffffff;
+  
+    border-radius: 16px;
+  
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  
+    transition: background 0.4s ease, transform 0.3s ease;
+  
+    max-width: 1200px;
+  
+    margin: 0 auto;
+  
+  }
+  
+  .site-footer:hover {
+  
+    background: linear-gradient(135deg, #2b2e30, #353a3f);
+  
+    transform: scale(1.01);
+  
+  }
+  
+  /* Footer heading */
+  
+  #footer-heading {
+  
+    font-size: 2rem;
+  
+    font-weight: 600;
+  
+    color: #f0db4f;
+  
+    margin: 0 0 1rem 0;
+  
+    transition: color 0.3s ease;
+  
+  }
+  
+  /* Footer links paragraph */
+  
+  #footer-links-text {
+  
+    font-size: 1.1rem;
+  
+    color: #dddddd;
+  
+    margin: 0.5rem 0 1.5rem 0;
+  
+    opacity: 0.9;
+  
+    transition: color 0.3s ease, opacity 0.3s ease;
+  
+  }
+  
+  #footer-links-text a {
+  
+    color: #f0db4f;
+  
+    text-decoration: none;
+  
+    margin: 0 0.75rem;
+  
+    transition: color 0.3s ease;
+  
+  }
+  
+  #footer-links-text a:hover {
+  
+    color: #ffffff;
+  
+  }
+  
+  /* Bottom paragraph */
+  
+  #footer-third-block-text {
+  
+    font-size: 0.9rem;
+  
+    color: #aaaaaa;
+  
+    line-height: 1.6;
+  
+    max-width: 800px;
+  
+    opacity: 0.8;
+  
+    transition: opacity 0.3s ease, color 0.3s ease;
+  
+  }
+  
+  .site-footer:hover #footer-third-block-text {
+  
+    opacity: 1;
+  
+    color: #ffffff;
+  
+  }
+   
