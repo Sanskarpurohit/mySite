@@ -1,8 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+
     const carousel = document.querySelector(".carousel");
     const allDivs = carousel.querySelectorAll(":scope > div");
     console.log(allDivs);
-    
+    console.log("hello");
+
+
     // Assign next and prev buttons
     const nextBtn = allDivs[0].querySelector("p");
     const prevBtn = allDivs[allDivs.length - 1].querySelector("p");
@@ -33,4 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     // Initialize
     updateSlides();
-   });
+   ;
+   function updateCarousel() {
+    slides.forEach((slide, index) => {
+      slide.classList.remove('active-slide');
+    });
+    slides[currentSlideIndex].classList.add('active-slide');
+   }
