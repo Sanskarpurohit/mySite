@@ -1,3 +1,6 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+}
 .homepage {
     /*max-width: 1200px;*/
     margin: 0 auto;
@@ -26,6 +29,8 @@
     font-weight: 700;
     margin: 0;
     transition: transform 0.3s ease, color 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
 #description {
@@ -33,6 +38,7 @@
     margin-top: 1rem;
     opacity: 0.9;
     transition: transform 0.3s ease, color 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* Hover animation */
@@ -175,9 +181,8 @@
   
     padding: 4rem 2rem;
   
-    background: linear-gradient(135deg, #1d1f20, #2a2e31);
-  
-    color: #ffffff;
+    background: #1f1f1f;
+    color: #fff;
   
     /* border-radius: 16px; */
   
@@ -209,7 +214,7 @@
   
     margin: 0;
   
-    color: #f0db4f;
+    color: #fff;
   
     transition: color 0.3s ease;
   
@@ -264,7 +269,7 @@
   
     padding: 4rem 2rem;
   
-    background: linear-gradient(135deg, #1d1f20, #2a2e31);
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   
     color: #ffffff;
   
@@ -284,9 +289,8 @@
   
   .site-footer:hover {
   
-    background: linear-gradient(135deg, #2b2e30, #353a3f);
-  
-    transform: scale(1.01);
+    transform: scale(1.02);
+    background: linear-gradient(135deg, #1a1f2b, #283e51, #485563);
   
   }
   
@@ -298,11 +302,12 @@
   
     font-weight: 600;
   
-    color: #f0db4f;
+    color: #fff;
   
     margin: 0 0 1rem 0;
   
     transition: color 0.3s ease;
+    
   
   }
   
@@ -324,7 +329,7 @@
   
   #footer-links-text a {
   
-    color: #f0db4f;
+    color: #fff;
   
     text-decoration: none;
   
