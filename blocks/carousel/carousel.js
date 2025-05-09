@@ -1,95 +1,36 @@
-document.addEventListener("DOMContentLoaded", function() {
-
-    const carousel = document.querySelector('.carousel'); // Select the carousel container
-
-    const slides = carousel.querySelectorAll('.carousel > div:nth-child(2)'); // Get all slide items
-
-    // Get the Next and Previous buttons (First and Last divs)
-
-    const firstNavButton = carousel.querySelector('div > div:first-child p'); // First button (Next)
-
-    const lastNavButton = carousel.querySelector('div > div:last-child p'); // Last button (Previous)
-
-    // Dynamically add unique IDs to the Next and Previous buttons
-firstNavButton.id = "next-button";
-lastNavButton.id = "prev-button";
-
-    // Dynamically assign IDs to slides
-
+document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector(".carousel");
+    const allDivs = carousel.querySelectorAll(":scope > div");
+    console.log(allDivs);
+    
+    // Assign next and prev buttons
+    const nextBtn = allDivs[0].querySelector("p");
+    const prevBtn = allDivs[allDivs.length - 1].querySelector("p");
+   nextBtn.id = "next-button";
+   prevBtn.id = "prev-button";
+    // Get only the slide blocks (ignore first and last nav button blocks)
+    const slides = Array.from(allDivs).slice(1, -1);
+    // Give IDs to slide blocks
     slides.forEach((slide, index) => {
-slide.id = "slide-" + (index + 1);
-
+   slide.id = `slide-${index + 1}`;
     });
-
-    // Add event listeners to the navigation buttons
-
-    firstNavButton.addEventListener('click', goToNextSlide);
-
-    lastNavButton.addEventListener('click', goToPreviousSlide);
-
-    // Track the current slide index
-
-    let currentSlideIndex = 0;
-
-    // Function to go to the next slide
-
-    function goToNextSlide() {
-
-        if (currentSlideIndex < slides.length - 1) {
-
-            currentSlideIndex++;
-
-        } else {
-
-            currentSlideIndex = 0; // Loop back to the first slide
-
-        }
-
-        updateCarousel();
-
+    let currentSlide = 0;
+    // Show only the current slide
+    function updateSlides() {
+      slides.forEach((slide, index) => {
+        slide.style.display = index === currentSlide ? "flex" : "none";
+      });
     }
-
-    // Function to go to the previous slide
-
-    function goToPreviousSlide() {
-
-        if (currentSlideIndex > 0) {
-
-            currentSlideIndex--;
-
-        } else {
-
-            currentSlideIndex = slides.length - 1; // Loop back to the last slide
-
-        }
-
-        updateCarousel();
-
-    }
-
-    // Function to update the carousel view and show the current slide
-
-    function updateCarousel() {
-
-        slides.forEach((slide, index) => {
-
-            if (index === currentSlideIndex) {
-
-                slide.style.display = "block"; // Show the current slide
-
-            } else {
-
-                slide.style.display = "none"; // Hide all other slides
-
-            }
-
-        });
-
-    }
-
-    // Initialize the carousel by showing the first slide
-
-    updateCarousel();
-
-});
- console.log("HELLO")
+    // Next Slide
+    nextBtn.addEventListener("click", () => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      updateSlides();
+    });
+    // Previous Slide
+    prevBtn.addEventListener("click", () => {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      updateSlides();
+    });
+    // Initialize
+    updateSlides();
+   });
