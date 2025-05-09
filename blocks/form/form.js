@@ -100,4 +100,8 @@ export default async function decorate(block) {
     }
   });
 }
+<<<<<<< HEAD
 console.log("Ended");
+=======
+console.log("ended");
+>>>>>>> main

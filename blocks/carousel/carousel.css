@@ -1,0 +1,137 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #1f1f1f;
+    /* border-radius: 12px; */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    /* max-width: 900px; */
+    margin: auto;
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+
+    
+  }
+  .carousel:hover{
+    transform: scale(1.01);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  }
+  
+
+    
+  
+  /* Buttons */
+  .carousel > div:first-child,
+  .carousel > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel > div:first-child {
+    order: 2; /* Now this becomes the "Next" button */
+  }
+  
+  .carousel > div:last-child {
+    order: 0; /* Now this becomes the "Prev" button */
+  }
+  
+  
+  .carousel p {
+    background: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .carousel p:hover {
+    background: #555;
+    transform: scale(1.05);
+  }
+  
+  /* Slide container (middle block) */
+  .carousel > div:nth-child(n+2):nth-last-child(n+2) {
+    order: 1;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+    max-width: 100%;
+    min-height: 180px;
+  }
+  
+  /* Image */
+  .carousel > div:nth-child(n+2):nth-last-child(n+2) picture {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .carousel > div:nth-child(n+2):nth-last-child(n+2) picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel > div:nth-child(n+2):nth-last-child(n+2):hover picture img {
+    transform: scale(1.05);
+  }
+  
+  /* Text content */
+  .carousel > div:nth-child(n+2):nth-last-child(n+2) h1 {
+    font-size: 1.5rem;
+    color: #f0db4f;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .carousel > div:nth-child(n+2):nth-last-child(n+2) p {
+    font-size: 1rem;
+    color: #dddddd;
+    opacity: 0.9;
+    margin: 0;
+  }
+  
+  /* Active slide */
+  .carousel .active-slide {
+    display: flex !important;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .carousel {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .carousel > div:nth-child(n+2):nth-last-child(n+2) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .carousel > div:nth-child(n+2):nth-last-child(n+2) picture {
+      width: 100%;
+      height: auto;
+    }
+  
+    .carousel > div:nth-child(n+2):nth-last-child(n+2) h1 {
+      font-size: 1.25rem;
+    }
+  
+    .carousel > div:nth-child(n+2):nth-last-child(n+2) p {
+      font-size: 0.95rem;
+    }
+  }

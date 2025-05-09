@@ -84,9 +84,9 @@ body.appear {
   display: block;
 }
 
-header {
+/* header {
   height: var(--nav-height);
-}
+} */
 
 header .header,
 footer .footer {
@@ -142,9 +142,9 @@ pre {
   white-space: pre;
 }
 
-main > div {
+/* main > div {
   margin: 40px 16px;
-}
+} */
 
 input,
 textarea,
@@ -229,7 +229,7 @@ main img {
 }
 
 /* sections */
-main > .section {
+/* main > .section {
   margin: 40px 0;
 }
 
@@ -241,13 +241,13 @@ main > .section > div {
 
 main > .section:first-of-type {
   margin-top: 0;
-}
+} */
 
-@media (width >= 900px) {
+/* @media (width >= 900px) {
   main > .section > div {
     padding: 0 32px;
   }
-}
+} */
 
 /* section metadata */
 main .section.light,

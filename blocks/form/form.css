@@ -12,6 +12,7 @@
     border: none;
     padding: 0;
   }
+.form{background-color:red;}
   
   .form form > .field-wrapper + .field-wrapper,
   .form form fieldset .field-wrapper + .field-wrapper {
@@ -169,4 +170,3 @@
   .form .toggle-wrapper input:checked + .slider::before {
     transform: translateX(24px);
   }
-  
