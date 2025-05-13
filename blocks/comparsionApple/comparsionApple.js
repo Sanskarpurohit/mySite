@@ -1,5 +1,5 @@
-const rows = document.querySelector('.comparisonApple').children;
-
+const rows = document.querySelector('.comparisonapple').children;
+console.log(rows);
 Array.from(rows).forEach((row) => {
 
   row.classList.add('comparison-row');
