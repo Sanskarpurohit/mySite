@@ -230,7 +230,7 @@ main img {
 /* Want to change */
 
 /* sections */
- main > .section {
+ /* main > .section {
   margin: 40px 0;
 }
 
@@ -248,7 +248,7 @@ main > .section:first-of-type {
   main > .section > div {
     padding: 0 32px;
   }
-} 
+}  */
 
 /* section metadata */
 main .section.light,
