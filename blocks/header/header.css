@@ -54,7 +54,7 @@ header nav p {
 }
 
 header nav a:any-link {
-  color: white;
+  color: cadetblue;
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
