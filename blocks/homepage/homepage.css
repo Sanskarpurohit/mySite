@@ -62,7 +62,7 @@
     margin: 0 auto;
     padding: 2rem;
     background: #1f1f1f;
-    color: #fff;
+    color: cadetblue;
     /* border-radius: 16px; */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     gap: 2rem;
@@ -118,7 +118,7 @@
     margin: 0 auto;
     padding: 2rem;
     background: #1f1f1f;
-    color: #fff;
+    color: cadetblue;
    /* border-radius: 16px; */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     gap: 2rem;
@@ -167,54 +167,86 @@
 
    /* cfm */
 
-   body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  .centered-section {
+   .centered-section {
+
     display: flex;
+  
     flex-direction: column;
+  
     align-items: center;
+  
     justify-content: center;
+  
     text-align: center;
+  
     padding: 4rem 2rem;
+  
     background: #1f1f1f;
-    color: #fff;
+    color: cadetblue;
+  
+    /* border-radius: 16px; */
+  
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  
     transition: background 0.4s ease, transform 0.3s ease;
+  
+    /* max-width: 1200px; */
+  
     margin: 0 auto;
+  
   }
   
   .centered-section:hover {
-    background: linear-gradient(135deg, #2b2e30, #353a3f);
+  
+    /* background: linear-gradient(135deg, #2b2e30, #353a3f); */
+  
     transform: scale(1.01);
+  
   }
   
   /* Title */
+  
   #center-title {
+  
     font-size: 2.75rem;
+  
     font-weight: 700;
+  
     margin: 0;
+  
     color: #fff;
+  
     transition: color 0.3s ease;
+  
   }
   
   /* Description */
+  
   #center-description {
+  
     font-size: 1.2rem;
+  
     margin-top: 1rem;
+  
     max-width: 700px;
-    color: rgba(221, 221, 221, 0.9); /* Soft white */
-    transition: color 0.3s ease;
+  
+    color: #dddddd;
+  
+    opacity: 0.9;
+  
+    transition: color 0.3s ease, opacity 0.3s ease;
+  
   }
   
-  /* On hover */
+  /* Optional: Animate on hover */
+  
   .centered-section:hover #center-description {
-    color: rgba(255, 255, 255, 1); /* Full white */
-  }
   
+    color: #ffffff;
+  
+    opacity: 1;
+  
+  }
  
   /* footer css */
 
@@ -270,7 +302,7 @@
   
     font-weight: 600;
   
-    color: #fff;
+    color: cadetblue;
   
     margin: 0 0 1rem 0;
   
@@ -338,4 +370,17 @@
     color: #ffffff;
   
   }
+  
+
+.homepage,
+.image-left,
+.image-right,
+.carousel,
+.centered-section
+{
+  margin-bottom: 1rem;
+
+}
+
+
    
