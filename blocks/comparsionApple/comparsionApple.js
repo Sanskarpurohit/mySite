@@ -1,4 +1,4 @@
-const rows = document.querySelector('.comparisonapple').children;
+const rows = document.querySelector('.comparsionapple').children;
 console.log(rows);
 Array.from(rows).forEach((row) => {
 
