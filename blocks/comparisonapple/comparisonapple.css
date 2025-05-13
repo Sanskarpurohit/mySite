@@ -1,0 +1,70 @@
+.comparisonapple {
+
+    width: 100%;
+  
+    max-width: 900px;
+  
+    margin: 20px auto;
+  
+    border-collapse: collapse;
+  
+    display: table;
+  
+    font-family: Arial, sans-serif;
+  
+    background-color: #f9f9f9;
+  
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  
+  }
+  
+  .comparison-row {
+  
+    display: table-row;
+  
+    transition: background-color 0.3s ease;
+  
+  }
+  
+  .comparison-row:hover {
+  
+    background-color: #e6f7ff;
+  
+  }
+  
+  .feature-label,
+  
+  .product-left,
+  
+  .product-right {
+  
+    display: table-cell;
+  
+    padding: 14px 20px;
+  
+    border: 1px solid #ddd;
+  
+    vertical-align: middle;
+  
+    text-align: center;
+  
+  }
+  
+  .feature-label {
+  
+    font-weight: bold;
+  
+    background-color: #f0f0f0;
+  
+    width: 33%;
+  
+  }
+  
+  .product-left,
+  
+  .product-right {
+  
+    width: 33%;
+  
+  }
+   
