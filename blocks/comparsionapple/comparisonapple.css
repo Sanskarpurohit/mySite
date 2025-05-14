@@ -1,0 +1,42 @@
+.comparisonapple {
+    display: table;
+    width: 40%; /* Further reduced width */
+    max-width: 400px; /* Further reduced max-width */
+    margin: 0.5rem auto; /* Keeping reduced margin */
+    padding: 0.5rem; /* Keeping reduced padding */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: cadetblue;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    border-collapse: collapse;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comparisonapple:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 255, 255, 0.2);
+}
+
+.comparison-row {
+    display: table-row;
+    transition: background-color 0.3s ease;
+}
+
+.comparison-row:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.feature-label,
+.product-left,
+.product-right {
+    display: table-cell;
+    padding: 0.25rem; /* Keeping reduced padding */
+    text-align: center;
+    font-size: 0.9rem; /* Keeping reduced font-size */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-label {
+    font-weight: bold;
+    background: none;
+}
